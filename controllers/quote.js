@@ -1,4 +1,4 @@
-import {Quote} from './models'
+import {Quote} from '../models'
 
 export const listAll = () =>
 Quote.find()

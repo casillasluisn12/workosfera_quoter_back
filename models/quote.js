@@ -67,4 +67,4 @@ const QuoteSchema = new Schema({
   usePushEach: true
 })
 
-export default mongoose.model('Quote', RequestSchema)
+export default mongoose.model('Quote', QuoteSchema)
