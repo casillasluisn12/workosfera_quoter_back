@@ -10,7 +10,7 @@
     "build-babel": "babel app -d dist",
     "lint": "./node_modules/.bin/eslint */*.js",
     "dev": "nodemon app.js --exec babel-node --presets es2015,stage-2",
-    "start": "babel-node --presets es2015,stage-2 app/app.js"
+    "start": "babel-node --presets es2015,stage-2 app.js"
   },
   "repository": {
     "type": "git",
