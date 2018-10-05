@@ -47,6 +47,9 @@ const QuoteSchema = new Schema({
   room:{
     type:String
   },
+  possibleRooms:{
+    type:Array
+  },
   people:{
     type:Number,
     default:1,
