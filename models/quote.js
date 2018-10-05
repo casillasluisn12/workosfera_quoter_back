@@ -27,7 +27,7 @@ const QuoteSchema = new Schema({
     type: String,
     validate:{
       validator:function(tel){
-        return /^\d{10}$/.test(v);
+        return /^\d{10}$/.test(tel);
       },
       message:props=>`${props.value} no son 10 dígitos`
     },
