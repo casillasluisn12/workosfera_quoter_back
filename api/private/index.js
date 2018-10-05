@@ -8,6 +8,7 @@ import express from 'express';
 // import Company from './company';
 // import Equipment from './equipment'; //Includes Category, typeEquipment & Equipment
 import Mail from './mail';
+import Verifier from './verifier';
 // import Part from './part';
 // import Programmer from './programmer';
 import Quote from './quote';
@@ -48,6 +49,7 @@ router.use(API_ADMIN, Quote);
 // router.use(API_ADMIN, Agenda);
 // router.use(API_ADMIN, TechnicalRU);
 router.use(API_ADMIN, Mail);
+router.use(API_ADMIN, Verifier);
 // router.use(API_ADMIN, Statistics);
 // router.use(API_ADMIN, Survey);
 // router.use(API_ADMIN, Upload);
