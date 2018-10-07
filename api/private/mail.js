@@ -52,7 +52,7 @@ app.group('/mails', (router) => {
                             return err;
 
                         return res.json({
-                            message: 'success',
+                            message: 'mensaje enviado correctamente',
                             email: 'mensaje enviado correctamente',
                             enviado:new Date().toLocaleString(),
                             receptor:to
@@ -65,7 +65,7 @@ app.group('/mails', (router) => {
                         return res.json({error:err}) ;
 
                     return res.json({
-                        message: 'success',
+                        message: 'mensaje enviado correctamente',
                         email: 'mensaje enviado correctamente',
                         enviado:new Date().toLocaleString(),
                         receptor:to

@@ -22,8 +22,13 @@ export const getOne =id=>{
 
 export const addOne =quote=> {
   let newQuote = new Quote(quote)
-  return newQuote
-  .save()
+  let count = 0
+  return Quote.find()
+  .then(count=>{
+    newQuote.folio = `000${count.length}`
+    return newQuote
+    .save()
+  })
   .then(quoteNew => {
     return quoteNew;
   })

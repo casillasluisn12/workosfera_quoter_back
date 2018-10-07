@@ -61,6 +61,9 @@ const QuoteSchema = new Schema({
   },
   comments:{
     type:String
+  },
+  folio:{
+    type:String
   }
 
 

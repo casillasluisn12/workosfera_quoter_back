@@ -22,7 +22,7 @@ import path from 'path';
 // );
 const transporter = nodemailer.createTransport(
     {
-        host:'gator4009.hostgator.com',
+        host:'smtp.1and1.mx',
         pool:true,
         port:465,
         secure:true,
