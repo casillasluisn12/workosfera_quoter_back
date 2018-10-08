@@ -56,19 +56,12 @@ const QuoteSchema = new Schema({
     type:Number
   },
   snackBaskets:{
-    type:Number
+    type:Array
   },
   people:{
     type:Number,
     default:1,
     min:1
-  },
-  snacks:{
-    type:Number,
-    deafult:0
-  },
-  snackType:{
-    type:Array
   },
   comments:{
     type:String
