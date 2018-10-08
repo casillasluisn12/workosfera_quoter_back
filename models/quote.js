@@ -16,6 +16,12 @@ const QuoteSchema = new Schema({
   name: {
     type: String
   },
+  isCow:{
+    type:Boolean
+  },
+  weHave:{
+    type:Boolean
+  },
   last: {
     type: String
   },
@@ -40,14 +46,10 @@ const QuoteSchema = new Schema({
     type:String,
     default:'cash'
   },
-  invoice:{
-    type:Boolean,
-    default:false
-  },
   room:{
     type:String
   },
-  possibleRooms:{
+  matchingRooms:{
     type:Array
   },
   people:{
@@ -63,6 +65,49 @@ const QuoteSchema = new Schema({
     type:String
   },
   folio:{
+    type:String
+  },
+  invoice:{
+    type:Boolean,
+    default:false
+  },
+  rfc:{
+    type:String
+  },
+  nameTax:{
+    type:String
+  },
+  lastTax:{
+    type:String
+  },
+  razonSocial:{
+    type:String
+  },
+  calle:{
+    type:String
+  },
+  numExt:{
+    type:String
+  },
+  numInt:{
+    type:String
+  },
+  codigoPostal:{
+    type:String
+  },
+  municipio:{
+    type:String
+  },
+  colonia:{
+    type:String
+  },
+  banco:{
+    type:String
+  },
+  digitosB:{
+    type:String
+  },
+  commentsTax:{
     type:String
   }
 

@@ -18,6 +18,20 @@ app.group('/quotes', (router) => {
             });
 
         })
+        .get('/:id',(req,res)=>{
+          const {params:{id}}=req
+          quoteCtrl
+            .getOne(id)
+            .then(quote => {
+                    if (quote == 'Something went wrong' || quote === null)
+                        res.status(200).json({ message: 'Cotizacion con id ' + id + ' no existe' });
+                    else
+                        res.status(200).json(quote);
+                })
+                .catch(error => {
+                    res.status(200).json({ error });
+                });
+        })
         .post('/',
         (req, res) => {
           const {body} = req
@@ -31,6 +45,7 @@ app.group('/quotes', (router) => {
             else {
               res.status(201).json({
                 message: 'Cotizacion agregada satisfactoriamente',
+                quote
               });
             }
           })
