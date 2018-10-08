@@ -52,6 +52,12 @@ const QuoteSchema = new Schema({
   matchingRooms:{
     type:Array
   },
+  total:{
+    type:Number
+  },
+  snackBaskets:{
+    type:Number
+  },
   people:{
     type:Number,
     default:1,
