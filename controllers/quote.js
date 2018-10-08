@@ -25,7 +25,7 @@ export const addOne =quote=> {
   let count = 0
   return Quote.find()
   .then(count=>{
-    newQuote.folio = `000${count.length}`
+    newQuote.folio = `000000${count.length}`.slice(-5)
     return newQuote
     .save()
   })
