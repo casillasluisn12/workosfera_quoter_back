@@ -67,6 +67,9 @@ const QuoteSchema = new Schema({
     type:Number,
     deafult:0
   },
+  snackType:{
+    type:Array
+  },
   comments:{
     type:String
   },
