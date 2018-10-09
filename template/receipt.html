@@ -176,8 +176,9 @@
                                                 <strong>
                         Hola {{name}},
                     </strong>
+                                                <br><br> Ya recibimos tu solicitud de reservación y en menos de 24 horas te responderemos confirmando la disponibilidad.
 
-                                                <br><br> Tu evento es muy importante para nosotros, en caso de     que la sala que escogiste no estuviera disponible,te sugeriremos otra al mismo precio o en otra hora… intentaremos siempre brindarte una solución, no te preocupes <span role="img" aria-label="emoji-wink">😉</span>
+                                                <br><br> Tu evento es muy importante para nosotros, en caso de que la sala que escogiste no estuviera disponible,te sugeriremos otra al mismo precio o en otra hora… intentaremos siempre brindarte una solución, no te preocupes <span role="img" aria-label="emoji-wink">😉</span>
                                                 <br><br>
                                                 <table style="text-align: center;font-size: 14pt">
                                                     <tbody>
@@ -188,117 +189,115 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-  
+
                                                 <br><br> estos son los datos de tu reserva folio {{folio_quote}}:
 
                                                 <br><br>
                                                 <table style="text-align:left;font-size:10pt" cellspacing="0" cellpadding="2" border="0" width="100%">
-                                                   <thead>
-                                                       <tr style="background:#f7dd77">
-                                                        <th style="border-bottom:2px solid #ffa000;padding: 5px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 30px; color: #555555;">
-                                                            Concepto
-                                                        </th>
-                                                        <th style="border-bottom:2px solid #ffa000;padding: 5px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 30px; color: #555555;">
-                                                            Valor
-                                                        </th>
+                                                    <thead>
+                                                        <tr style="background:#f7dd77">
+                                                            <th style="border-bottom:2px solid #ffa000;padding: 5px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 30px; color: #555555;">
+                                                                Concepto
+                                                            </th>
+                                                            <th style="border-bottom:2px solid #ffa000;padding: 5px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 30px; color: #555555;">
+                                                                Valor
+                                                            </th>
 
-                                                    </tr>
-                                                   </thead>
-                                                    
+                                                        </tr>
+                                                    </thead>
+
                                                     <tbody>
                                                         <tr>
-                                                        <td>Fecha</td>
-                                                        <td><b>{{date_formatted}}</b></td>
+                                                            <td>Fecha</td>
+                                                            <td><b>{{date_formatted}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Hora inicio</td>
-                                                        <td>{{initialTime}}</td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Hora inicio</td>
+                                                            <td>{{initialTime}}</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Horas</td>
-                                                        <td><b>{{hourCount}}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Horas</td>
+                                                            <td><b>{{hourCount}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Intervalo</td>
-                                                        <td><b>{{from_time}}</b></td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Intervalo</td>
+                                                            <td><b>{{from_time}}</b></td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nombre</td>
-                                                        <td><b>{{name}}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nombre</td>
+                                                            <td><b>{{name}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Apellidos</td>
-                                                        <td><b>{{last}}</b></td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Apellidos</td>
+                                                            <td><b>{{last}}</b></td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Email</td>
-                                                        <td><b>{{email}}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Email</td>
+                                                            <td><b>{{email}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Teléfono</td>
-                                                        <td><b>{{phone}}</b></td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Teléfono</td>
+                                                            <td><b>{{phone}}</b></td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Empresa</td>
-                                                        <td><b>{{company}}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Empresa</td>
+                                                            <td><b>{{company}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Sala</td>
-                                                        <td><b>{{room}}</b></td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Sala</td>
+                                                            <td><b>{{room}}</b></td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Personas</td>
-                                                        <td><b>{{people}}</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Personas</td>
+                                                            <td><b>{{people}}</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Botana</td>
-                                                        <td><b>{{botana}}</b></td>
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Botana</td>
+                                                            <td><b>{{botana}}</b></td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>IVA</td>
-                                                        <td><b>$  {{taxes}}mxn</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IVA</td>
+                                                            <td><b>$  {{taxes}}mxn</b></td>
 
-                                                    </tr>
-                                                    <tr style="background:#e6e6e6">
-                                                        <td>Total</td>
-                                                        <td><b>$ 
+                                                        </tr>
+                                                        <tr style="background:#e6e6e6">
+                                                            <td>Total</td>
+                                                            <td><b>$ 
 															    {{total}} mxn
 															</b> </td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Observaciones</td>
-                                                        <td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Observaciones</td>
+                                                            <td>
 
-                                                            {{comments}}</td>
+                                                                {{comments}}</td>
 
-                                                    </tr>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                                 <br><br>
                                                 <table>
-     <tr>
-         <td style="text-align: center;font-size: 14pt;line-height: 20pt"><strong> Por cierto... ¡Tenemos una nueva membresía para ti!
+                                                    <tr>
+                                                        <td style="text-align: center;font-size: 14pt;line-height: 20pt"><strong> Por cierto... ¡Tenemos una nueva membresía para ti!
  </strong></td>
-     </tr>
- </table> <br>
-Con la membresía <b>“Pa´quete juntes”</b> podrás usar *cualquier sala al mismo precio y sin importar el número de personas... y sí, ¡puedes traer tu coffee break! 
-<br><br>
-Por $2,000 pesos al mes, recibe 20 horas para que las uses como quieras. Responde este correo si te interesa esta opción.
-<br><br>
-<small>*Válido de 1 a 8 personas en la Sala Clásica, Sala Luz o Sala Agua. No aplica para el Auditorio, Cuarto de Ping Pong ni en el Patio </small>
+                                                    </tr>
+                                                </table> <br> Con la membresía <b>“Pa´quete juntes”</b> podrás usar *cualquier sala al mismo precio y sin importar el número de personas... y sí, ¡puedes traer tu coffee break!
+                                                <br><br> Por $2,000 pesos al mes, recibe 20 horas para que las uses como quieras. Responde este correo si te interesa esta opción.
+                                                <br><br>
+                                                <small>*Válido de 1 a 8 personas en la Sala Clásica, Sala Luz o Sala Agua. No aplica para el Auditorio, Cuarto de Ping Pong ni en el Patio </small>
 
 
                                                 <!-- Button : Begin -->
