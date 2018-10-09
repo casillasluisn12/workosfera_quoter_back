@@ -54,6 +54,33 @@ app.group('/quotes', (router) => {
           });
 
         })
+        .put('/:id',(req,res)=>{
+            const { id } = req.params
+            quoteCtrl
+                .updateOne(id, req.body)
+                .then(quote => {
+                    if (quote.hasOwnProperty('error')) {
+                        res.status(200)
+                            .json({
+                                message: quote.message,
+                                error: quote.error
+                            });
+                    }
+                    else {
+                        if (quote.nModified == 0)
+                            res.status(200).json({ message: 'No se realizó ningún cambio' });
+                        else
+                            res.status(200)
+                                .json({
+                                    message: 'Se realizaron cambios correctamente',
+                                    cambios: quote.nModified
+                                });
+                    }
+                })
+                .catch(err => {
+                    res.status(200).json({ err: err });
+                });
+        })
 
 
 });
