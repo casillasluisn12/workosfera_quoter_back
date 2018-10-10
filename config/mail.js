@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport(
         debug:true,
         auth: {
             user: 'alo@workosfera.com',
-            pass: '@Workosfera123'
+            pass: '@Cowork567'
         },
         tls: {
         // do not fail on invalid certs
