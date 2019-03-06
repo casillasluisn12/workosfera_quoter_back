@@ -56,9 +56,10 @@ transporter.verify(function(error, success) {
     }
 });
 
-const abso = path.join(path.dirname(module.parent.filename), '../template');
+const abso = path.join(path.dirname(module.parent.filename), '../../template');
 transporter.use('compile', hbs({
   viewPath: abso,
+  partialsDir:abso,
   extName: '.html'
 }));
 
