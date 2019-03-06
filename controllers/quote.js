@@ -1,8 +1,16 @@
 import {Quote} from '../models'
+import {URL_FRONT} from '../constants';
 
 export const listAll = () =>
 Quote.find()
-     .then(quoteList => quoteList)
+     .then(quoteList =>{
+       let listUpdated = []
+       listUpdated = quoteList.map((el)=>{
+         el.set('url',`${URL_FRONT.url}/${el._id}`,{strict: false})
+         return el
+       })
+       return listUpdated
+     })
      .catch(e => {
         console.warn(e)
         return {error: e};

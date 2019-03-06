@@ -22,14 +22,14 @@ import path from 'path';
 // );
 const transporter = nodemailer.createTransport(
     {
-        host:'smtp.1and1.mx',
-        pool:true,
+        host:'smtp.ionos.mx',
+        // pool:true,
         port:465,
         secure:true,
         debug:true,
         auth: {
             user: 'alo@workosfera.com',
-            pass: '@Cowork567'
+            pass: '@Procrastinando19'
         },
         tls: {
         // do not fail on invalid certs
