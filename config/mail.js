@@ -61,8 +61,7 @@ transporter.use('compile', hbs({
    viewEngine: {},
    extName:'.html', /* or '.handlebars' */
    viewPath:path.resolve(__dirname, '../template'),
-   layoutsDir:path.resolve(__dirname, '../template'),
-   partialsDir:path.resolve(__dirname, '../template')
+   partialsDir:{}
 }));
 
 
