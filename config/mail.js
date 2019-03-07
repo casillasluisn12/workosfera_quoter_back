@@ -59,6 +59,7 @@ transporter.verify(function(error, success) {
 
 const abso = path.join(path.dirname(module.parent.filename), '../../template');
 transporter.use('compile', hbs({
+  viewEngine:{},
   viewPath: abso,
   extName: '.html'
 }));
