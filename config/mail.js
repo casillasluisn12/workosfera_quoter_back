@@ -59,7 +59,9 @@ transporter.verify(function(error, success) {
 
 const abso = path.join(path.dirname(module.parent.filename), '../../template');
 transporter.use('compile', hbs({
-  viewEngine:{},
+  viewEngine:{
+    partialsDir: abso,
+  },
   viewPath: abso,
   extName: '.html'
 }));
