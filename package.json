@@ -53,7 +53,7 @@
     "multer-s3": "^2.7.0",
     "node-fetch": "^2.2.0",
     "nodemailer": "^4.0.1",
-    "nodemailer-express-handlebars": "^3.0.0",
+    "nodemailer-express-handlebars": "^2.0.0",
     "path": "^0.12.7",
     "raven": "^2.6.0"
   },
