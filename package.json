@@ -2,7 +2,7 @@
   "name": "workosfera_quoter_back",
   "version": "1.0.0",
   "description": "Backend for workosfera quoter",
-  "main": "app.js",
+  "main": "./build/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "clean": "rm -rf build && mkdir build",
