@@ -9,7 +9,7 @@
     "lint": "./node_modules/.bin/eslint */*.js",
     "start":"babel-node ./build/index.js",
     "dev": "nodemon ./src/index.js --exec babel-node --presets env",
-    "build-babel": "babel -d ./build ./src -s",
+    "build-babel": "babel -d ./build ./src -s --copy-files",
     "build": "npm run clean && npm run build-babel"
   },
   "repository": {
