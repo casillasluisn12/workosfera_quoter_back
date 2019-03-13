@@ -1,5 +1,5 @@
 import express from 'express';
-// import { authorization } from '../../middleware/auth';
+import { authorization } from '../../middleware/auth';
 
 // import AddonTicket from './addonTicket'; //Includes all the addons for ticket
 // import Agenda from './agenda';
@@ -32,7 +32,7 @@ const router = express.Router();
 router.get('/api/v1', (req, res) => {
     res.send('API');
 });
-// router.use(authorization);
+router.use(authorization);
 // router.use(API_ADMIN, User);
 // router.use(API_ADMIN, Technical);
 // router.use(API_ADMIN, Boss);

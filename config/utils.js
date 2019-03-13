@@ -1,8 +1,8 @@
 import bodyParser from 'body-parser'
 import helmet from 'helmet'
 import dotenv from 'dotenv'
-// import cors from 'cors'
-import {cors} from '../middleware'
+import cors from 'cors'
+// import {cors} from '../middleware'
 import logger from 'morgan'
 
 if(process.env.NODE_ENV===undefined){
@@ -14,7 +14,7 @@ if(process.env.NODE_ENV===undefined){
 export const utils = (app) => {
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({ extended: true }))
-  app.use(cors)
+  app.use(cors());
   app.use(helmet())
   if(process.env.NODE_ENV==='development'){
     app.use(logger('dev'))
