@@ -28,8 +28,8 @@ const transporter = nodemailer.createTransport(
         secure:true,
         debug:true,
         auth: {
-            user: 'alo@workosfera.com',
-            pass: '@Procrastination19'
+            user: 'reservaciones@workosfera.com',
+            pass: '@Trabajo123'
         },
         tls: {
         // do not fail on invalid certs
