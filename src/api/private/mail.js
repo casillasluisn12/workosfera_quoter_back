@@ -12,7 +12,7 @@ app.group('/mails', (router) => {
             const {body} = req
             const {to,bcc,subject,template,html,context,replyTo,text} = body
             let mailOptions = {
-                from: '"Workósfera" alo@workosfera.com', // sender address
+                from: '"Workósfera" reservaciones@workosfera.com', // sender address
                 replyTo,
                 to,
                 bcc,
