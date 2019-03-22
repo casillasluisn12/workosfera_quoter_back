@@ -1,14 +1,13 @@
 import express from 'express';
 import { transporter } from '../../config/mail';
 import { fileParser } from '../../utils/upload';
-import { admin_credentials } from '../../middleware/auth'
 
 const app = express.Router();
 
-app.group('/mails',(router) => {
+app.group('/mails', (router) => {
     router
         .post('/',
-        fileParser,admin_credentials,
+        fileParser,
         (req, res) => {
             const {body} = req
             const {to,bcc,subject,template,html,context,replyTo,text} = body
