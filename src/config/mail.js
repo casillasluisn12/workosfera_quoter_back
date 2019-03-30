@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport(
         debug:true,
         auth: {
             user: 'reservaciones@workosfera.com',
-            pass: '%19Juntas'
+            pass: '#Juntas19'
         },
         tls: {
         // do not fail on invalid certs
@@ -58,7 +58,6 @@ transporter.verify(function(error, success) {
 
 
 const abso = path.join(path.dirname(module.parent.filename), '../../template');
-console.log(abso)
 transporter.use('compile', hbs({
   viewEngine:{
     partialsDir: abso,

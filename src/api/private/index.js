@@ -32,7 +32,7 @@ const router = express.Router();
 router.get('/api/v1', (req, res) => {
     res.send('API');
 });
-router.use(authorization);
+router.use(API_ADMIN,authorization);
 // router.use(API_ADMIN, User);
 // router.use(API_ADMIN, Technical);
 // router.use(API_ADMIN, Boss);
