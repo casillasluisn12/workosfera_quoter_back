@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport(
         debug:true,
         auth: {
             user: 'reservaciones@workosfera.com',
-            pass: 'wer-asr-5634s'
+            pass: 'wEr-aSr-5634s//'
         },
         tls: {
         // do not fail on invalid certs
