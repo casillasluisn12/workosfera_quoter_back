@@ -20,6 +20,7 @@ import path from 'path';
 //         }
 //     }
 // );
+console.log(process.env.PASS_MAIL)
 const transporter = nodemailer.createTransport(
     {
         host:'smtp.ionos.mx',
