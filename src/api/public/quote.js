@@ -20,7 +20,6 @@ app.group('/quotes', (router) => {
         })
         .get('/:id',(req,res)=>{
           const {params:{id}}=req
-          console.log(id)
           quoteCtrl
             .getOne(id)
             .then(quote => {
