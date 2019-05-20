@@ -22,11 +22,10 @@ if(process.env.NODE_ENV==='development'){
 
 const corsOptions = {
   origin(origin, callback) {
-    console.log(origin)
     if (whiteList.indexOf(origin) !== -1) {
       callback(null, true)
     } else {
-      callback(new Error('Not allowed by CORS'))
+      callback(new Error(origin,'Not allowed by CORS'))
     }
   }
 }
