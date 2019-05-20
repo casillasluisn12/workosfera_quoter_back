@@ -13,7 +13,7 @@ if(process.env.NODE_ENV===undefined){
  */
 let whiteList = []
 if(process.env.NODE_ENV==='development'){
-  whiteList = ['http://quoter.workosfera.com', 'http://localhost:3000']
+  whiteList = ['http://quoter.workosfera.com', 'http://localhost:3000',undefined]
   // whiteList = ['http://quoter.workosfera.com']
 } else {
   whiteList = ['http://quoter.workosfera.com']
@@ -22,6 +22,7 @@ if(process.env.NODE_ENV==='development'){
 
 const corsOptions = {
   origin(origin, callback) {
+    console.log(origin)
     if (whiteList.indexOf(origin) !== -1) {
       callback(null, true)
     } else {
