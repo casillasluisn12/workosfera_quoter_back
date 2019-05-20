@@ -16,7 +16,7 @@ if(process.env.NODE_ENV==='development'){
   whiteList = ['http://quoter.workosfera.com', 'http://localhost:3000',undefined]
   // whiteList = ['http://quoter.workosfera.com']
 } else {
-  whiteList = ['http://quoter.workosfera.com']
+  whiteList = ['http://quoter.workosfera.com','http://workosfera.com','http://www.quoter.workosfera.com']
 }
 
 
