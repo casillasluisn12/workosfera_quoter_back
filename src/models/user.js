@@ -37,7 +37,8 @@ const UserSchema = new Schema({
 },
 {
     versionKey: false,
-    usePushEach: true
+    usePushEach: true,
+    timestamps:true
 });
 
 export default mongoose.model('User', UserSchema);

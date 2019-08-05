@@ -19,19 +19,3 @@ export const mongooseConnection = (URI) => {
             process.exit(1)
         })
 }
-
-/**
- * Mongo Driver db connection
- * @param {URI_DB} URI - Database Uri
- */
-export const mongodbConnection = (URI) => {
-    MongoClient.connect(URI)
-        .then(() => {
-            console.log('%s Connected to db: %s successfully via MONGODRIVER', chalk.green('✓'), URI)
-        })
-        .catch(err => {
-            console.log(err)
-            console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'))
-            process.exit()
-        })
-}
