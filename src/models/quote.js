@@ -117,7 +117,8 @@ const QuoteSchema = new Schema({
 }, {
 
   versionKey: false,
-  usePushEach: true
+  usePushEach: true,
+  timestamps:true
 })
 
 export default mongoose.model('Quote', QuoteSchema)
