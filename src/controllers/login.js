@@ -19,14 +19,14 @@ export const startSession = (email,password) => {
         .findOne(query)
         .then(user => {
             if (user == null) {
-                message = 'Autenticación falló, Usuario no encontrado';
-                return message;
+                let error = 'Autenticación falló, Usuario no encontrado';
+                return ({error});
             }
             else if (user) {
 
                 if (!bcrypt.compareSync(password, user.password)) {
-                    message = 'Autenticación falló. Contraseña incorrecta.';
-                    return message;
+                    let error = 'Autenticación falló. Contraseña incorrecta.';
+                    return ({error});
                 }
                 else {
 
@@ -40,8 +40,8 @@ export const startSession = (email,password) => {
                 }
             }
         })
-        .catch((e) => {
-            console.log(e)
-            return message = e;
+        .catch((error) => {
+            console.log(error)
+            return ({error});
         });
 };

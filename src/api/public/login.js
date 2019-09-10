@@ -9,15 +9,16 @@ app.group('/login',router=>{
             loginCtrl
                 .startSession(req.body.email, req.body.password)
                 .then(response => {
-
+                    console.log(response)
                     if (!response.hasOwnProperty('token')) {
-                        res.status(201).json({ message: response })
+                        res.status(201).json(response)
                     }
                     else {
                         res.status(201).json(response)
                     }
                 })
                 .catch(err => {
+                    console.log('error',err)
                     res.status(200).send(err)
                 })
         })
